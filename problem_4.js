@@ -43,10 +43,10 @@ function caesarCipher(s, k) {
             
             const isUppercase = s[i] === s[i].toUpperCase();
 
-            // // Calculate the new character code, considering wrapping around the alphabet
+            // Calculate the new character code, considering wrapping around the alphabet
             const newCharCode = (shiftedCharCode - (isUppercase ? 65 : 97)) % 26 + (isUppercase ? 65 : 97);
 
-            // // Convert the new character code back to a character
+            // Convert the new character code back to a character
             arr.push(String.fromCharCode(newCharCode));
 
         }
